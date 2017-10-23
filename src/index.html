@@ -11,13 +11,14 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/Calculation.js"></script>
+  <script src="js/Canvas.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-static-top">
     <nav class="navbar-header">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="./index.html">進数計算機</a>
+          <a class="navbar-brand" href="./index.html">進数変換機</a>
         </div>
       </div>
     </nav>
@@ -53,14 +54,18 @@
 </ul>
 
 <!-- タブ内容 -->
-<div class="tab-content">
-　　<div class="tab-pane" id="sampleContentA">
+  <div class="tab-content">
+    <div class="tab-pane" id="sampleContentA">
       <p>タブＡの内容</p>
-	</div>
-	<div class="tab-pane" id="sampleContentB">
+      <canvas id="leftCanvas" width="400" height="400" style="background-color: black;">
+      </canvas>
+    </div>
+    <div class="tab-pane" id="sampleContentB">
       <p>タブＢの内容</p>
+      <canvas id="rightCanvas" width="400" height="400" style="background-color: black;">
+      </canvas>
+    </div>
   </div>
-</div>
   
 </body>
 </html>
