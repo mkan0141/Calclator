@@ -25,7 +25,7 @@ $(document).ready(function(){
 
   var Hexadecimal_to_Binary = function(Hexadecimal){
     Hexadecimal = parseInt(Hexadecimal, 16);
-    return Hexadecimal_to_Decimal(Hexadecimal).toString(2);
+    return Hexadecimal.toString(2);
   }
   
   $('#calc2').click(function(){
