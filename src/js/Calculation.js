@@ -10,12 +10,10 @@ $(document).ready(function(){
     return (Decimal.toString(16));
   }
   var Binary_to_Decimal = function(Binary) {
-    Binary = parseInt(Binary);
     return (parseInt(Binary, 2));
   }
 
   var Binary_to_Hexadecimal = function(Binary) {
-    Binary = parseInt(Binary);
     return Binary_to_Decimal(Binary).toString(16);
   }
 
